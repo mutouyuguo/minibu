@@ -5,6 +5,6 @@ a little toolbox for developers
 
 ```
 docker build -t mutouyuguo/minibu .
-docker run --privileged -d --name minibu -it -v `pwd`/..:~/code mutouyuguo/minibu
-docker exec -it minibu /bin/zsh
+docker run --privileged -d --name minibu -it mutouyuguo/minibu
+docker exec -it minibu /bin/bash
 ```

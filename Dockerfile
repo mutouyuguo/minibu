@@ -1,3 +1,3 @@
-FROM ubuntu:20.10
-ENV DEBIAN_FRONTEND noninteractive
-RUN apt-get update && apt-get install -y snap 
+FROM ubuntu:20.04
+COPY build.sh /root/build.sh
+RUN /root/build.sh
